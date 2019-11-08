@@ -1,0 +1,52 @@
+<style>
+.navbar {
+	border: none;
+	border-radius: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.dropdown-menu {
+    background-color:  rgba(0,0,0,0.7);
+    background-color:  rgba(0,0,0,0.3);
+}
+.dropdown-menu li>a{color:white; }
+
+
+</style>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	<li><a href="/">Elma</a></li> 
+     		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Zoneminder<span class="caret"></span></a>
+        		<ul class="dropdown-menu">
+          			<li><a href="zoneminder.php">Zoneminder</a></li>
+          			<li><a href="zm_movie_list.php">Movies</a></li>
+				<li role="separator" class="divider"></li>
+          			<li><a href="zm_streams.php">Streams</a></li>
+        		</ul>
+      		</li>
+	</li> 
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Utilities<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="files.php">Files</a></li>
+          <li><a href="shell.php">Shell</a></li>
+          <li><a href="vnc.php">VNC</a></li>
+          <li><a href="displayip.php">Display IP</a></li>
+        </ul>
+      </li>
+      <li><a href="zm_streams.php">Streams</a></li>
+      <li><a href="alarme.php">Alarme</a></li>
+      <li><a href="pi.php">Pi</a></li>
+      <li><a href="temp_rh_log.html">Temp_RH</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
